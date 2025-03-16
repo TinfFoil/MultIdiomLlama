@@ -1,0 +1,14 @@
+[
+  {"lang": "en",
+  "prompt_input": "Below is an input sentence, paired with an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Input:\n{input}\n\n### Instruction:\n{instruction}\n\n### Response:\n",
+  "response_split": "### Response:"    
+  },
+  {"lang": "it",
+  "prompt_input": "Di seguito si trova una frase di input, associata a un'istruzione che descrive una task. Scrivi una risposta che completi in modo appropriato la richiesta.\n\n### Istruzione:\n{instruction}\n\n### Input:\n{input}\n\n### Risposta:\n",
+  "response_split": "### Risposta:" 
+  },
+  {"lang": "pt",
+  "prompt_input": "Abaixo está uma frase de entrada, acompanhada de instruções que descrevem uma tarefa. Escreva uma resposta que complete adequadamente a solicitação.\n\n### Instrução:\n{instruction}\n\n### Input:\n{input}\n\n### Resposta:\n",
+  "response_split": "### Resposta:"
+  }
+]
