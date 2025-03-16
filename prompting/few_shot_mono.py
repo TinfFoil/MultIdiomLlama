@@ -463,7 +463,7 @@ def generate_for_all_samples(all_data, templates, demonstrations, tokenizer, mod
     
     return generated_data
 
-# PART 5: EVALUATION AND METRICS
+# COMPUTE METRICS
 
 def assign_label(text):
     """Assign 0 or 1 based on the presence of certain keywords."""
@@ -865,7 +865,6 @@ def task2_metrics(generated_data):
             def calc_overlap(samples):
                 return sum(s["overlap"] for s in samples) / len(samples)
             
-            # Use the bootstrap utility function
             lang_std_devs = {
                 "precision": bootstrap_std_dev(idiom_samples, calc_precision),
                 "recall": bootstrap_std_dev(idiom_samples, calc_recall),
@@ -907,7 +906,6 @@ def task2_metrics(generated_data):
         "individual_overlap": np.mean(all_overlap_scores) if all_overlap_scores else 0
     }
 
-    # Use the shared utility function to save metrics to TSV
     save_metrics_to_tsv(
         'task2_metrics_with_span_matching.tsv',
         metrics_results,
@@ -919,9 +917,7 @@ def task2_metrics(generated_data):
     print("Task 2 metrics have been saved.")
     return metrics_results, global_std_devs, means
 
-# Update main function to use the new metrics functions
 def main():
-    # Configuration remains the same
     model_name = "meta-llama/Llama-3.2-3B-Instruct"
     template_file = "templates.json"
     demonstrations_file = "demonstrations.json"
