@@ -5,9 +5,10 @@ To tackle these tasks, I created a multilingual dataset consisting of instructio
 Then, based on this dataset, I adopted two distinct approaches, i.e. prompting and instruction fine-tuning, to investigate the impact of the instruction language on the model's performance.
 
 ## Content
-This repository contains two subfolders:
+This repository contains three subfolders:
 1. `fine_tuning`: this subfolder contains the scripts to fine-tune [LLaMA 3.2 1B](https://huggingface.co/meta-llama/Llama-3.2-1B) on the instruction dataset;
-2. `prompting`: this subfolder includes the code to prompt [LLaMA 3.2 3B Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct) in a zero-shot and a few-shot setting.
+2. `prompting`: this subfolder includes the code to prompt [LLaMA 3.2 3B Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct) in a zero-shot and a few-shot setting;
+3. `data`: this subfolder contains training and test data in English, Italian, and Portuguese.
 
 ## Requirements
 To install the required dependencies, the `requirements.txt` file can be used as follows: 
