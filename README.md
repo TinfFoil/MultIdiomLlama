@@ -15,3 +15,8 @@ To install the required dependencies, the `requirements.txt` file can be used as
 
 ```bash
 pip install -r requirements.txt
+```
+## License
+The MultIdiomLlama dataset is licensed under the CC BY-SA-NC 4.0 license.
+
+<sub>The dataset is derived from three corpora with different licenses; the most restrictive license was applied to this project’s dataset.</sub>
